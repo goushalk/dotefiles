@@ -1,0 +1,87 @@
+@import url("file:///home/jellybean/.cache/wal/colors-waybar.css");
+
+* {
+  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-size: 16px;
+  color: @color14; /* Light highlight */
+  margin: 2px;
+  background: transparent;
+  border: none;
+}
+
+window#waybar {
+  background: transparent;
+  border-radius: 55px;
+  margin: 1px 10px;
+}
+
+#workspaces {
+  background: @background;
+  border-radius: 80px;
+  border: 2.1px solid @color14; /* Optional: Replace with @color14 in RGB if you want tighter control */
+}
+
+#workspaces button {
+  color: @color4;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+  background: rgba(36, 66, 52, 0.6);
+  color: @color14;
+  border-radius: 100px;
+}
+
+#custom-hotkey,
+#custom-theme,
+#bluetooth, 
+#custom-power,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#custom-sep,
+#cpu,
+#memory,
+#temperature {
+  padding: 1px 10px;
+  margin: 2px;
+  background: @background;
+  border-radius: 20px;
+  border: 2.1px solid @color14;
+  color: @color14;
+}
+
+#battery.charging {
+  color: @color14;
+  background: rgba(31, 62, 46, 0.5);
+}
+
+#battery.warning {
+    color: orange;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+#battery.critical {
+    color: red;
+    animation: blink-animation 1s infinite;
+}
+
+
+tooltip {
+  background: @background;
+  border: 1px solid @color14;
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: @color14;
+}

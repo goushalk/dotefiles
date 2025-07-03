@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "left",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "session",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#0f0",
+          "background": "#0b1c14"
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#a3be8c",
+          "background": "#14261e",
+          "properties": {
+            "style": "folder"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#88c0d0",
+          "background": "#1b2b24",
+          "properties": {
+            "branch_icon": "🌿 ",
+            "fetch_status": true,
+            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Status }} {{ .Staging.String }}{{ end }}{{ if .Working.Status }} {{ .Working.String }}{{ end }}"
+          }
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#420d09",
+          "properties": {
+            "always_enabled": true,
+            "display_exit_code": true
+          }
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#a3be8c",
+          "properties": {
+            "text": "\n❯ "
+          }
+        }
+      ]
+    },
+    {
+      "type": "right",
+      "alignment": "right",
+      "segments": [
+        {
+          "type": "battery",
+          "style": "plain",
+          "foreground": "#b4ff9f",
+          "properties": {
+            "charged_icon": "󱐋",
+            "charging_icon": "",
+            "discharging_icon": "󰁹",
+            "template": "{{ .Icon }} {{ .Percentage }}%"
+          }
+        },
+        {
+          "type": "time",
+          "style": "plain",
+          "foreground": "#a3be8c",
+          "properties": {
+            "time_format": "15:04:05"
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "console_title_template": "{{ .Folder }}"
+}
+

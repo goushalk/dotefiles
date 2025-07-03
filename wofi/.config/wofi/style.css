@@ -1,0 +1,74 @@
+@import url("file:///home/jellybean/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: 'monospace';
+    font-size: 18px;
+    font-weight: bolder
+}
+
+
+/* Window */
+window {
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: @background;
+}
+
+/* Inner Box */
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: @background;
+}
+
+/* Outer Box */
+#outer-box {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: @background;
+    border-radius: 5px;
+}
+
+/* Scroll */
+#scroll {
+    margin: 0px;
+    padding: 10px;
+    border: none;
+}
+
+/* Input */
+#input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @color14;
+    background-color: @background;
+    border: 2px solid @color14;
+}
+
+/* Text */
+#text {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    color: @color14;
+}
+
+/* Selected Entry */
+#entry:selected {
+    background-color: @background;
+    outline: 1px solid @color14;
+}
+
+#entry:selected #text {
+    color: @color14;
+}
+
+image {
+    margin-left: 10px;
+}
+

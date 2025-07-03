@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{ .Folder }}",
+  "blocks": [
+    {
+      "type": "left",
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#0f0",
+          "powerline_symbol": "\ue0b0",
+          "background": "#0b1c14",
+          "type": "session",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "style": "folder"
+          },
+          "foreground": "#a3be8c",
+          "powerline_symbol": "\ue0b0",
+          "background": "#14261e",
+          "type": "path",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "branch_icon": "🌿 ",
+            "fetch_status": true,
+            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Status }} \uf067{{ .Staging.String }}{{ end }}{{ if .Working.Status }} \uf044{{ .Working.String }}{{ end }}"
+          },
+          "foreground": "#88c0d0",
+          "powerline_symbol": "\ue0b0",
+          "background": "#1b2b24",
+          "type": "git",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "always_enabled": true,
+            "display_exit_code": true
+          },
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "background": "#420d09",
+          "type": "exit",
+          "style": "powerline"
+        },
+        {
+          "properties": {
+            "text": "\n❯ "
+          },
+          "foreground": "#a3be8c",
+          "type": "text",
+          "style": "plain"
+        }
+      ]
+    },
+    {
+      "type": "right",
+      "alignment": "right",
+      "segments": [
+        {
+          "properties": {
+            "charged_icon": "\udb85\udc0b",
+            "charging_icon": "\uf0e7",
+            "discharging_icon": "\udb80\udc79",
+            "template": "{{ .Icon }} {{ .Percentage }}%"
+          },
+          "foreground": "#b4ff9f",
+          "type": "battery",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "time_format": "15:04:05"
+          },
+          "foreground": "#a3be8c",
+          "type": "time",
+          "style": "plain"
+        }
+      ]
+    }
+  ],
+  "version": 3,
+  "final_space": true
+}

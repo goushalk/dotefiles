@@ -1,0 +1,29 @@
+[global]
+    font = JetBrainsMono Nerd Font 10
+    transparency = 10
+    frame_color = {color1}
+    corner_radius = 10
+    separator_color = auto
+    frame_width = 2
+    padding = 12
+    offset = (10, 40)
+    origin = top-right
+
+[urgency_low]
+    timeout = 5
+    background = {background}
+    foreground = {color6}
+    frame_color = {color1}
+
+[urgency_normal]
+    timeout = 8
+    background = {background}
+    foreground = {foreground}
+    frame_color = {color2}
+
+[urgency_critical]
+    timeout = 0
+    background = {color1}
+    foreground = {color15}
+    frame_color = {color1}
+

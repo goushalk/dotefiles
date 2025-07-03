@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 58,
+
+  "modules-left": [
+    "custom/sep",
+    "hyprland/workspaces",
+    "custom/theme",
+    "custom/hotkey"
+  ],
+
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "pulseaudio",
+    "battery",
+    "bluetooth",
+    "network",
+    "custom/power",
+    "tray"
+  ],
+
+  "hyprland/workspaces": {
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "interval": 60,
+    "format": "  {:%I:%M %p}",
+    "tooltip": true,
+    "tooltip-format": "{:%A, %d %B %Y}"
+  },
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  muted",
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "AC0",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-alt": "{timeToEmpty} {icon}",
+    "format-icons": [ "󰁺", "󰁻", "󰁽", "󰁿", "󰁹" ],
+    "max-length": 25
+},
+
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰛳 {ifname}",
+    "format-disconnected": "󰲛 Disconnected",
+    "on-click": "~/.config/foresttrail/scripts/Network/nmtui.sh"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/foresttrail/scripts/waybar/power_menu.sh",
+    "interval": 86400
+  },
+
+  "bluetooth": {
+    "on-click": "blueman-manager",
+    "format": "󰂯 {status}",
+    "format-disabled": "󰂲 Disabled",
+    "format-connected": "󰂱 {device_alias}",
+    "tooltip-format": "{device_alias} - {device_address}"
+  },
+
+  "custom/theme": {
+    "format": "  ",
+    "tooltip": "Theme Changer",
+    "on-click": "~/.config/foresttrail/scripts/swww/wallpaper-manager.sh"
+  },
+    
+  "custom/hotkey": {
+    "format": "  ",
+    "tooltip": "hotkey",
+    "on-click": "~/.config/foresttrail/scripts/hotkeys.sh"
+  }
+
+
+}
+
