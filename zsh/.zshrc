@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
 #AUTORUN 
 #------------------------------------------------------
 
-eval "$(oh-my-posh init zsh --config ~/.poshthemes/EDM115-newline.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.poshthemes/foresttrail.omp.json)"
 
 
 
@@ -169,7 +169,7 @@ export LC_ALL=en_IN.UTF-8
 # fi
 #
 
-fastfetch --file ~/neofetch.txt
+#fastfetch --file ~/neofetch.txt
 
 # =====================================================================
 # pywal

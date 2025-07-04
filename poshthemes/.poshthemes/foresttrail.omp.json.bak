@@ -1,87 +1,105 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 2,
+  "final_space": true,
+  "patch_pwsh_bleed": true,
+  "transient_prompt": {
+    "template": "❯ ",
+    "foreground": "p:color15"
+  },
   "blocks": [
     {
-      "type": "left",
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:color15",
+          "template": " "
+        },
+        {
           "type": "session",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#0f0",
-          "background": "#0b1c14"
+          "style": "diamond",
+          "foreground": "p:color0",
+          "background": "p:color11",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": "{{ .UserName }}"
         },
         {
           "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#a3be8c",
-          "background": "#14261e",
-          "properties": {
-            "style": "folder"
-          }
+          "style": "plain",
+          "foreground": "p:color10",
+          "template": "  {{ .Path }}"
         },
         {
           "type": "git",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#88c0d0",
-          "background": "#1b2b24",
-          "properties": {
-            "branch_icon": "🌿 ",
-            "fetch_status": true,
-            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Status }} {{ .Staging.String }}{{ end }}{{ if .Working.Status }} {{ .Working.String }}{{ end }}"
-          }
-        },
-        {
-          "type": "exit",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#420d09",
-          "properties": {
-            "always_enabled": true,
-            "display_exit_code": true
-          }
-        },
-        {
-          "type": "text",
           "style": "plain",
-          "foreground": "#a3be8c",
+          "foreground": "#fab387",
+          "template": "  {{ .HEAD }}{{ if gt .Ahead 0 }} +{{ .Ahead }}{{ end }}{{ if gt .Behind 0 }} -{{ .Behind }}{{ end }}{{ if .Working.Changed }} {{ end }}{{ if .Staging.Changed }} {{ end }}",
           "properties": {
-            "text": "\n❯ "
+            "fetch_status": true,
+            "display_changing_color": true
           }
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "foreground": "#50fa7b",
+          "template": "  {{ .Full }}"
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "foreground": "#bd93f9",
+          "template": "  {{ .Full }}"
+        },
+        {
+          "type": "java",
+          "style": "plain",
+          "foreground": "#ff79c6",
+          "template": "  {{ .Full }}"
+        },
+        {
+          "type": "php",
+          "style": "plain",
+          "foreground": "#6272a4",
+          "template": "  {{ .Full }}"
         }
       ]
     },
     {
-      "type": "right",
-      "alignment": "right",
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
       "segments": [
         {
-          "type": "battery",
+          "type": "text",
           "style": "plain",
-          "foreground": "#b4ff9f",
-          "properties": {
-            "charged_icon": "󱐋",
-            "charging_icon": "",
-            "discharging_icon": "󰁹",
-            "template": "{{ .Icon }} {{ .Percentage }}%"
-          }
-        },
-        {
-          "type": "time",
-          "style": "plain",
-          "foreground": "#a3be8c",
-          "properties": {
-            "time_format": "15:04:05"
-          }
+          "foreground": "p:color15",
+          "template": "❯"
         }
       ]
     }
   ],
-  "final_space": true,
-  "console_title_template": "{{ .Folder }}"
+  "palette": {
+    "color0": "#0b0f0c",
+    "color1": "#1f2d1d",
+    "color2": "#264d33",
+    "color3": "#3e8948",
+    "color4": "#63775e",
+    "color5": "#a3b18a",
+    "color6": "#c3d7b3",
+    "color7": "#dce1c2",
+    "color8": "#8f9779",
+    "color9": "#7c6f64",
+    "color10": "#89b482",
+    "color11": "#a9b665",
+    "color12": "#6c7a89",
+    "color13": "#4a5846",
+    "color14": "#3b4d3f",
+    "color15": "#e6e9dd"
+  }
 }
 
