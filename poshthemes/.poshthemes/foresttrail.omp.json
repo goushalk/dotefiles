@@ -1,87 +1,175 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "console_title_template": "{{ .Folder }}",
+  "final_space": true,
+  "patch_pwsh_bleed": true,
+  "transient_prompt": {
+    "template": "  ❯❯ {{ .Folder }} ",
+    "foreground": "p:color15",
+    "background": "transparent",
+    "newline": true
+  },
   "blocks": [
     {
-      "type": "left",
+      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "foreground": "#0f0",
-          "powerline_symbol": "\ue0b0",
-          "background": "#0b1c14",
-          "type": "session",
-          "style": "powerline"
-        },
-        {
-          "properties": {
-            "style": "folder"
-          },
-          "foreground": "#a3be8c",
-          "powerline_symbol": "\ue0b0",
-          "background": "#14261e",
-          "type": "path",
-          "style": "powerline"
-        },
-        {
-          "properties": {
-            "branch_icon": "🌿 ",
-            "fetch_status": true,
-            "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Status }} \uf067{{ .Staging.String }}{{ end }}{{ if .Working.Status }} \uf044{{ .Working.String }}{{ end }}"
-          },
-          "foreground": "#88c0d0",
-          "powerline_symbol": "\ue0b0",
-          "background": "#1b2b24",
-          "type": "git",
-          "style": "powerline"
-        },
-        {
-          "properties": {
-            "always_enabled": true,
-            "display_exit_code": true
-          },
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "background": "#420d09",
-          "type": "exit",
-          "style": "powerline"
-        },
-        {
-          "properties": {
-            "text": "\n❯ "
-          },
-          "foreground": "#a3be8c",
           "type": "text",
-          "style": "plain"
+          "style": "plain",
+          "foreground": "p:color15",
+          "template": "\n╭─"
+        },
+        {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "p:color15",
+          "background": "p:color13",
+          "leading_diamond": "",
+          "template": "{{ .UserName }}",
+          "properties": {
+            "cache_duration": "none"
+          }
+        },
+        {
+          "type": "os",
+          "style": "powerline",
+          "foreground": "p:color15",
+          "background": "p:color13",
+          "powerline_symbol": "",
+          "template": "{{ .Icon }}  "
+        },
+        {
+          "type": "path",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "p:color10",
+          "trailing_diamond": "",
+          "template": "󰉖 {{ path .Path .Location }}",
+          "properties": {
+            "style": "full"
+          }
         }
       ]
     },
     {
-      "type": "right",
+      "type": "prompt",
       "alignment": "right",
       "segments": [
         {
+          "type": "git",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#ffb86c",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": " {{ .HEAD }}{{ if gt .Ahead 0 }} <#50fa7b>+{{ .Ahead }}</>{{ end }}{{ if gt .Behind 0 }} <#ff5555>-{{ .Behind }}</>{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}",
           "properties": {
-            "charged_icon": "\udb85\udc0b",
-            "charging_icon": "\uf0e7",
-            "discharging_icon": "\udb80\udc79",
-            "template": "{{ .Icon }} {{ .Percentage }}%"
-          },
-          "foreground": "#b4ff9f",
-          "type": "battery",
-          "style": "plain"
+            "fetch_status": true,
+            "display_changing_color": true
+          }
         },
         {
+          "type": "node",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#50fa7b",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": " {{ .Full }}"
+        },
+        {
+          "type": "npm",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#ff5555",
+          "leading_diamond": "",
+          "trailing_diamond": "",
           "properties": {
-            "time_format": "15:04:05"
+            "display_mode": "files",
+            "extensions": ["package-lock.json"]
           },
-          "foreground": "#a3be8c",
-          "type": "time",
-          "style": "plain"
+          "template": " {{ .Full }}"
+        },
+        {
+          "type": "pnpm",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#ffb86c",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "display_mode": "files",
+            "extensions": ["pnpm-lock.yaml"]
+          },
+          "template": "󰋁 {{ .Full }}"
+        },
+        {
+          "type": "python",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#50fa7b",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "display_mode": "files"
+          },
+          "template": " {{ .Full }}"
+        },
+        {
+          "type": "java",
+          "style": "diamond",
+          "foreground": "p:color13",
+          "background": "#ff79c6",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": " {{ .Full }}"
+        },
+        {
+          "type": "php",
+          "style": "diamond",
+          "foreground": "p:color15",
+          "background": "#6272a4",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": " {{ .Full }}"
         }
       ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "p:color15",
+          "template": "╰─ ❯❯",
+          "properties": {
+            "always_enabled": true
+          }
+        }
+      ],
+      "newline": true
     }
   ],
-  "version": 3,
-  "final_space": true
+  "palette": {
+    "color0": "#0b0f0c",
+    "color1": "#1f2d1d",
+    "color2": "#264d33",
+    "color3": "#3e8948",
+    "color4": "#63775e",
+    "color5": "#a3b18a",
+    "color6": "#c3d7b3",
+    "color7": "#dce1c2",
+    "color8": "#8f9779",
+    "color9": "#7c6f64",
+    "color10": "#89b482",
+    "color11": "#a9b665",
+    "color12": "#6c7a89",
+    "color13": "#4a5846",
+    "color14": "#3b4d3f",
+    "color15": "#e6e9dd"
+  },
+  "version": 3
 }
+
