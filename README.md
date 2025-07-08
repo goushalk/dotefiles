@@ -51,21 +51,20 @@ git clone --recursive https://github.com/<you>/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-2. Symlink the pieces you need with **GNU Stow** (recommended):
+2. Run the automated installer (Arch/Manjaro):
 
 ```bash
-sudo pacman -S stow   # or your distro equivalent
-
-stow zsh kitty nvim hypr waybar wofi tmux fastfetch wal gtk-3.0 gtk-4.0 gtk-2.0
+chmod +x install.sh
+./install.sh
 ```
 
-A helper function `stowconf` is already defined inside `zsh/.zshrc`:
+   This will:
+   • Install all required packages via pacman  
+   • Install Oh-My-Zsh (if missing)  
+   • Fetch git submodules  
+   • Symlink every config directory with GNU Stow
 
-```shell
-stowconf <app_name>
-# 1. moves ~/.config/<app_name> into the repo
-# 2. calls stow to create the symlinks
-```
+   If you're on another distribution, read the script and adapt the package list / commands or install the dependencies manually (see below), then run `stow <dir>` for the modules you want.
 
 3. Log out / in (or restart the relevant program) and enjoy the new setup!
 
@@ -73,20 +72,20 @@ stowconf <app_name>
 
 ## 🔧 Dependencies
 
-These dotfiles assume the following software is installed:
+The `install.sh` script takes care of everything on Arch-based systems, but if you prefer to do things manually (or use another distro) you'll need:
 
 • hyprland, hyprlock, swayidle, swww  
 • waybar, wofi, dunst  
 • kitty, fastfetch, tmux, neovim  
-• oh-my-zsh, oh-my-posh, eza, ripgrep, fzf  
+• zsh, oh-my-posh, eza, ripgrep, fzf  
 • python-pywal, nerd-fonts-complete  
-• git (with submodule support), stow
+• git (with submodule support), stow, curl
 
-Install them via your package manager, e.g. for Arch-based:
+Example Arch install command:
 
 ```bash
 sudo pacman -S hyprland waybar wofi dunst kitty fastfetch tmux neovim \
-               oh-my-posh eza ripgrep fzf pywal-git swww stow
+               zsh oh-my-posh eza ripgrep fzf python-pywal swww stow git curl
 ```
 
 ---
