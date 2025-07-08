@@ -96,7 +96,7 @@ main() {
 if [[ ! -d .git && ! -f README.md ]]; then
   warn "Not running inside the dotfiles repo – cloning now …"
   DOTFILES_DIR="$HOME/dotfiles"
-  REPO_URL="${DOTFILES_REPO:-https://github.com/<you>/dotfiles.git}"
+  REPO_URL="${DOTFILES_REPO:-https://github.com/goushalk/dotfiles.git}"
   if [[ -d "$DOTFILES_DIR" ]]; then
     warn "$DOTFILES_DIR already exists, using it."
   else
