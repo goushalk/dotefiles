@@ -13,6 +13,7 @@ alt="$color6"
 hi="$color3"
 dim="$color8"
 red="$color1"
+col="$color5"
 
 # Helper fns
 set() { tmux set-option -gq "$1" "$2"; }
@@ -22,7 +23,7 @@ setw() { tmux set-window-option -gq "$1" "$2"; }
 set status on
 set status-interval 5
 set status-justify centre
-set status-left-length 30
+set status-left-length 20
 set status-right-length 50
 set status-bg "$bg"
 set status-fg "$fg"
@@ -37,14 +38,14 @@ set pane-border-style "fg=$dim"
 set pane-active-border-style "fg=$accent"
 
 # Window styles
-setw window-status-format "#[fg=$fg,bg=$bg] #I:#W "
-setw window-status-current-format "#[fg=$accent,bg=$bg]#[fg=$fg,bg=$accent,bold] #I:#W #[fg=$accent,bg=$bg]"
+setw window-status-format "#[fg=$fg,bg=$bg] #I) #W "
+setw window-status-current-format "#[fg=$color5,bg=$bg]#[fg=$fg,bg=$color5,bold]  #W #[fg=$color5,bg=$bg]"
 set window-style "fg=$dim,bg=$bg"
 set window-active-style "fg=$fg,bg=$bg"
 
 # Left (logo + session)
-set status-left "#[fg=$alt,bg=$bg]#[fg=$fg,bg=$alt,bold]   #S #[fg=$alt,bg=$bg]"
+set status-left "#[fg=$alt,bg=$bg]#[fg=$fg,bg=$alt,bold]  #S #[fg=$alt,bg=$bg]"
 
 # Right (clock + hostname)
-set status-right "#[fg=$red,bg=$bg]#[fg=$bg,bg=$red,bold] #h #[fg=$red,bg=$bg]"
+set status-right "#[fg=$hi,bg=$bg]#[fg=$fg,bg=$hi,bold] #h #[fg=$hi,bg=$bg]"
 
