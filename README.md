@@ -51,11 +51,17 @@ git clone --recursive https://github.com/<you>/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-2. Run the automated installer (Arch/Manjaro):
+2. **Bootstrap with a single command (curl)** *(Arch/Manjaro)*:
 
 ```bash
-chmod +x install.sh
-./install.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/<you>/dotfiles/main/install.sh)
+```
+
+   Or, clone first and run manually (recommended if you plan to hack on the configs):
+
+```bash
+git clone --recursive https://github.com/<you>/dotfiles.git ~/dotfiles && \
+  cd ~/dotfiles && ./install.sh
 ```
 
    This will:

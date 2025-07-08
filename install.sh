@@ -92,4 +92,18 @@ main() {
   say "All done! Log out and back in to apply your new environment."
 }
 
+# If the script is executed outside its repository, bootstrap by cloning.
+if [[ ! -d .git && ! -f README.md ]]; then
+  warn "Not running inside the dotfiles repo – cloning now …"
+  DOTFILES_DIR="$HOME/dotfiles"
+  REPO_URL="${DOTFILES_REPO:-https://github.com/<you>/dotfiles.git}"
+  if [[ -d "$DOTFILES_DIR" ]]; then
+    warn "$DOTFILES_DIR already exists, using it."
+  else
+    git clone --recursive "$REPO_URL" "$DOTFILES_DIR"
+  fi
+  cd "$DOTFILES_DIR"
+  exec ./install.sh "$@"   # re-execute inside repo
+fi
+
 main "$@" 
