@@ -7,7 +7,8 @@
     "custom/sep",
     "hyprland/workspaces",
     "custom/theme",
-    "custom/hotkey"
+    "custom/hotkey",
+    "custom/network_speed"
   ],
 
   "modules-center": [
@@ -20,7 +21,7 @@
     "bluetooth",
     "network",
     "custom/power",
-    "tray"
+    "tray"  
   ],
 
   "hyprland/workspaces": {
@@ -94,8 +95,16 @@
     "format": "  ",
     "tooltip": "hotkey",
     "on-click": "~/.config/foresttrail/scripts/hotkeys.sh"
-  }
+  },
+   
+"custom/network_speed": {
+  "exec": "~/.config/foresttrail/scripts/Network/speed-out.sh",
+  "return-type": "json",
+  "interval": 1,
+  "tooltip": false
+}
 
 
+ 
 }
 

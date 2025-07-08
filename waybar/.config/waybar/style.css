@@ -35,6 +35,33 @@ window#waybar {
   border-radius: 100px;
 }
 
+#custom-network_speed {
+  background: @background;
+  border: 2px solid @color14;
+  border-radius: 16px;
+  margin: 2px;
+  padding: 1px 4px;
+  transition: padding 0.3s ease;
+  color: @color14;
+}
+
+#custom-network_speed span:nth-child(2) {
+  font-size: 0px;
+  transition: font-size 0.3s ease;
+}
+
+/* On hover: expand padding + show the text */
+#custom-network_speed:hover {
+  padding: 1px 10px;
+}
+
+#custom-network_speed:hover span:nth-child(2) {
+  font-size: 14px;
+}
+
+
+
+
 #custom-hotkey,
 #custom-theme,
 #bluetooth, 
@@ -85,3 +112,4 @@ tooltip {
   padding: 4px 8px;
   color: @color14;
 }
+
