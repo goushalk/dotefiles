@@ -17,11 +17,42 @@ say()  { printf "%b\n" "${GREEN}==>${NC} $*"; }
 warn() { printf "%b\n" "${YELLOW}==>${NC} $*"; }
 fail() { printf "%b\n" "${RED}Error:${NC} $*" >&2; exit 1; }
 
+# Configuration
+REPO="${DOTFILES_REPO:-goushalk/dotfiles}"
+
 # -----------------------------------------------------------------------------
 #  Helpers
 # -----------------------------------------------------------------------------
 need() {
   command -v "$1" &>/dev/null || fail "$1 is required but not installed!"
+}
+
+# Additional helper functions for bootstrap mode
+_latest_release() {
+  curl -s "https://api.github.com/repos/$REPO/releases/latest" \
+    | grep -m1 '"tag_name":' | sed -E 's/.*"([^\"]+)".*/\1/'
+}
+
+install_yay() {
+  if command -v yay &>/dev/null; then
+    say "yay already installed."
+    return
+  fi
+  say "Installing yay AUR helper …"
+  sudo pacman -Sy --needed --noconfirm base-devel git
+  git clone https://aur.archlinux.org/yay.git /tmp/yay
+  (cd /tmp/yay && makepkg -si --noconfirm)
+}
+
+confirm() {
+  while true; do
+    read -rp "$1 (y/n): " yn
+    case $yn in
+      [Yy]*) return 0 ;;
+      [Nn]*) return 1 ;;
+      *) echo "Please answer y or n." ;;
+    esac
+  done
 }
 
 # -----------------------------------------------------------------------------
@@ -94,14 +125,52 @@ main() {
 
 # If the script is executed outside its repository, bootstrap by cloning.
 if [[ ! -d .git && ! -f README.md ]]; then
-  warn "Not running inside the dotfiles repo – cloning now …"
-  DOTFILES_DIR="$HOME/dotfiles"
-  REPO_URL="${DOTFILES_REPO:-https://github.com/goushalk/dotfiles.git}"
-  if [[ -d "$DOTFILES_DIR" ]]; then
-    warn "$DOTFILES_DIR already exists, using it."
+  clear
+  cat <<'EOF'
+  ____             _           _      _     _
+ / ___|___  _ __  | |__   ___ | |_ __| | __| |
+| |   / _ \| '_ \ | '_ \ / _ \| __/ _` |/ _` |
+| |__| (_) | | | || |_) | (_) | || (_| | (_| |
+ \____\___/|_| |_|||_.__/ \___/ \__\__,_|\__,_|
+EOF
+  printf "goushalk Dotfiles installer\n\n"
+
+  confirm "Do you want to start the installation now?" || { echo "Cancelled."; exit 0; }
+
+  say "Synchronising pacman …"
+  sudo pacman -Sy
+
+  say "Ensuring yay AUR helper …"
+  install_yay
+
+  LATEST_TAG=$(_latest_release)
+  echo
+  echo "Select release to install:"
+  PS3="> "
+  select CHOICE in "latest ($LATEST_TAG)" "rolling (main)" "cancel"; do
+    case $CHOICE in
+      "latest ($LATEST_TAG)")
+        BRANCH="$LATEST_TAG"
+        break ;;
+      "rolling (main)")
+        BRANCH="main"
+        break ;;
+      "cancel")
+        echo "Cancelled."; exit 0 ;;
+    esac
+  done
+
+  DOWNLOAD_DIR="$HOME/.goushalk"
+  DOTFILES_DIR="$DOWNLOAD_DIR/dotfiles"
+  mkdir -p "$DOWNLOAD_DIR"
+
+  say "Cloning branch $BRANCH …"
+  if [[ "$BRANCH" == "main" ]]; then
+    git clone --depth 1 "https://github.com/$REPO.git" "$DOTFILES_DIR"
   else
-    git clone --recursive "$REPO_URL" "$DOTFILES_DIR"
+    git clone --branch "$BRANCH" --depth 1 "https://github.com/$REPO.git" "$DOTFILES_DIR"
   fi
+
   cd "$DOTFILES_DIR"
   exec ./install.sh "$@"   # re-execute inside repo
 fi

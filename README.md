@@ -51,18 +51,25 @@ git clone --recursive https://github.com/goushalk/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-2. **Bootstrap with a single command (curl)** *(Arch/Manjaro)*:
+2. **Install in one step (curl)** *(Arch/Manjaro)*:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/goushalk/dotfiles/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/goushalk/dotfiles/main/install.sh)
 ```
 
-`bootstrap.sh` is a higher-level helper that:
-• Ensures required packages and the `yay` AUR helper (Arch) are installed  
-• Lets you choose between the latest tagged release or the rolling `main` branch  
-• Clones the repository into `~/.goushalk/dotfiles` and then hands over to `install.sh`.
+The `install.sh` script is a one-stop installer that:
 
-`install.sh` lives inside the repository itself and focuses on stowing configs and setting up software. Run it directly if you've already cloned the repo and want to re-install / update symlinks.
+• Ensures required packages and the `yay` AUR helper are available  
+• Lets you choose between the latest tagged release or the rolling `main` branch  
+• Clones the repository (if needed), initialises submodules, installs all software and stows every configuration file.
+
+If you already have the repository checked out locally just run:
+
+```bash
+./install.sh
+```
+
+to update packages and refresh the symlinks.
 
 3. Log out / in (or restart the relevant program) and enjoy the new setup!
 
