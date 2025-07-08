@@ -47,20 +47,20 @@ Personal configuration files for my daily Linux desktop – tuned for a Wayland 
 1. Clone the repo **with submodules**:
 
 ```bash
-git clone --recursive https://github.com/<you>/dotfiles.git ~/dotfiles
+git clone --recursive https://github.com/goushalk/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
 2. **Bootstrap with a single command (curl)** *(Arch/Manjaro)*:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/<you>/dotfiles/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/goushalk/dotfiles/main/install.sh)
 ```
 
    Or, clone first and run manually (recommended if you plan to hack on the configs):
 
 ```bash
-git clone --recursive https://github.com/<you>/dotfiles.git ~/dotfiles && \
+git clone --recursive https://github.com/goushalk/dotfiles.git ~/dotfiles && \
   cd ~/dotfiles && ./install.sh
 ```
 
