@@ -28,7 +28,7 @@ set status-right-length 50
 set status-bg "$bg"
 set status-fg "$fg"
 set status-attr dim
-
+set window-status-current-format-length 10
 # Message styling
 set message-style "fg=$fg,bg=$bg"
 set message-command-style "fg=$fg,bg=$bg"
