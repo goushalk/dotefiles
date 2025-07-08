@@ -54,23 +54,15 @@ cd ~/dotfiles
 2. **Bootstrap with a single command (curl)** *(Arch/Manjaro)*:
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/goushalk/dotfiles/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/goushalk/dotfiles/main/bootstrap.sh)
 ```
 
-   Or, clone first and run manually (recommended if you plan to hack on the configs):
+`bootstrap.sh` is a higher-level helper that:
+• Ensures required packages and the `yay` AUR helper (Arch) are installed  
+• Lets you choose between the latest tagged release or the rolling `main` branch  
+• Clones the repository into `~/.goushalk/dotfiles` and then hands over to `install.sh`.
 
-```bash
-git clone --recursive https://github.com/goushalk/dotfiles.git ~/dotfiles && \
-  cd ~/dotfiles && ./install.sh
-```
-
-   This will:
-   • Install all required packages via pacman  
-   • Install Oh-My-Zsh (if missing)  
-   • Fetch git submodules  
-   • Symlink every config directory with GNU Stow
-
-   If you're on another distribution, read the script and adapt the package list / commands or install the dependencies manually (see below), then run `stow <dir>` for the modules you want.
+`install.sh` lives inside the repository itself and focuses on stowing configs and setting up software. Run it directly if you've already cloned the repo and want to re-install / update symlinks.
 
 3. Log out / in (or restart the relevant program) and enjoy the new setup!
 
