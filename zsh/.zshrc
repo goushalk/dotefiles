@@ -197,3 +197,10 @@ stowconf() {
     mv ~/.config/$1 ~/dotfiles/$1/.config/ &&
     cd ~/dotfiles && stow $1
 }
+
+
+gcap() {
+    git add .
+    git commit -m "$1"
+    git push -u orgin main
+}

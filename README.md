@@ -108,7 +108,7 @@ git pull --rebase && git submodule update --init --recursive
 
 ## 📸 Preview
 
-![[./assets/rizzzzzzzzzzeeeeeee.png]]
+[rice](./assets/rizzzzzzzzzzeeeeeee.png)
 
 ---
 
