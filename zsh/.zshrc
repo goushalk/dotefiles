@@ -200,7 +200,23 @@ stowconf() {
 
 
 gcap() {
+    blue=$(tput setaf 4)
+    red=$(tput setaf 1)
+    reset=$(tput srg0)
+
+    if [[ -z "$1" ]]; then
+        echo ""
+        echo "${red}[+] Provide the commit message${reset}"
+        echo ""
+        return 1
+    fi
+    
+    echo "${blue}[+] git is tracking the changes...${reset}"
+    echo ""
     git add .
+    echo "${blue}[+] commiting the message...${reset}"
+    echo ""
     git commit -m "$1"
+    echo "[+] Pushing to main branch in github"
     git push -u origin main
 }
