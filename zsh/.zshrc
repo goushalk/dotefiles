@@ -202,7 +202,7 @@ stowconf() {
 gcap() {
     blue=$(tput setaf 4)
     red=$(tput setaf 1)
-    reset=$(tput srg0)
+    reset=$(tput sgr0)  
 
     if [[ -z "$1" ]]; then
         echo ""
@@ -210,13 +210,17 @@ gcap() {
         echo ""
         return 1
     fi
-    
-    echo "${blue}[+] git is tracking the changes...${reset}"
+
     echo ""
+    echo "${blue}[+] Git is tracking the changes...${reset}"
     git add .
-    echo "${blue}[+] commiting the message...${reset}"
+
     echo ""
-    git commit -m "$1"
-    echo "[+] Pushing to main branch in github"
+    echo "${blue}[+] Committing the message...${reset}"
+    git commit -m "$1 — $(date '+%Y-%m-%d %H:%M:%S')"
+
+    echo ""
+    echo "${blue}[+] Pushing to main branch on GitHub...${reset}"
     git push -u origin main
 }
+
