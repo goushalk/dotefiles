@@ -108,9 +108,7 @@ git pull --rebase && git submodule update --init --recursive
 
 ## 📸 Preview
 
-```
-$(cat neotxt/neofetch.txt)
-```
+[rice](./assets/rizzzzzzzzzzeeeeeee.png)
 
 ---
 

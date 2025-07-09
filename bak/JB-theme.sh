@@ -37,6 +37,9 @@ set message-command-style "fg=$fg,bg=$bg"
 set pane-border-style "fg=$dim"
 set pane-active-border-style "fg=$accent"
 
+set -g status-left "#[fg=$bg,bg=$alt]#[fg=$fg,bg=$alt,bold]   #S #{prefix_highlight} #[fg=$alt,bg=$bg]"
+
+
 # Window styles
 setw window-status-format "#[fg=$fg,bg=$bg] #I) #W "
 setw window-status-current-format "#[fg=$color5,bg=$bg]#[fg=$fg,bg=$color5,bold]  #W #[fg=$color5,bg=$bg]"
