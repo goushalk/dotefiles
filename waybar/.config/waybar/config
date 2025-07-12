@@ -62,7 +62,7 @@
     "format-wifi": " {essid}",
     "format-ethernet": "󰛳 {ifname}",
     "format-disconnected": "󰲛 Disconnected",
-    "on-click": "~/.config/foresttrail/scripts/Network/nmtui.sh"
+    "on-click": "networkmanager_dmenu"
   },
 
   "tray": {

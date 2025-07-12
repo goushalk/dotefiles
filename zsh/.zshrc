@@ -134,6 +134,8 @@ alias lt='eza -a --tree --level=1 --icons=always'
 alias shutdown='systemctl poweroff'
 alias stegsolve='java -jar /usr/local/bin/stegsolve.jar'
 alias v='nvim'
+alias startdocker='sudo systemctl restart docker' 
+alias kalirun='docker run -it -v kali_data:/root kalilinux/kali-rolling'
 alias tmuxpy='tmux new-session -d -s Python-project -n py-nvim \; new-window -n terminal \; select-window -t py-nvim \; attach-session -t Python-project'
 # -----------------------------------------------------
 # Window Managers
