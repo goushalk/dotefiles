@@ -20,7 +20,7 @@ fi
 
 cd "$DOTFILES_DIR"
 
-# === 2. Install yay if needed ===
+# === 2. Install yay if missing ===
 if ! command -v yay &>/dev/null && ! command -v paru &>/dev/null; then
     echo "${RED}!! No AUR helper found. Installing yay...${RESET}"
     
@@ -42,7 +42,7 @@ else
     fi
 fi
 
-# === 3. Install Pacman packages ===
+# === 3. Install Official Packages ===
 echo "${GREEN}=> Installing Pacman packages...${RESET}"
 
 PACMAN_PKGS=(
@@ -58,7 +58,7 @@ PACMAN_PKGS=(
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm "${PACMAN_PKGS[@]}"
 
-# === 4. Install AUR packages ===
+# === 4. Install AUR Packages ===
 echo "${GREEN}=> Installing AUR packages with $AUR_HELPER...${RESET}"
 
 AUR_PKGS=(
@@ -68,22 +68,25 @@ AUR_PKGS=(
 
 $AUR_HELPER -S --needed --noconfirm "${AUR_PKGS[@]}"
 
-# === 5. Stow Dotfiles ===
+# === 5. Stow with Conflict Cleanup ===
 echo "${GREEN}=> Cleaning conflicts and stowing dotfiles...${RESET}"
 
 for dir in */ ; do
     [[ "$dir" == ".git/" ]] && continue
 
     echo "${GREEN}--> Processing $dir${RESET}"
-    conflicts=$(stow -nv "$dir" 2>&1 | grep -oE 'existing target is not a link: (.+)' | awk -F': ' '{print $2}')
+    conflicts=$(stow -nv "$dir" 2>&1 | grep -oE 'existing target is not a link: (.+)' | awk -F': ' '{print $2}' || true)
 
     for path in $conflicts; do
-        echo "${RED}⚠ Removing conflicting path: $HOME/$path${RESET}"
-        rm -rf "$HOME/$path"
+        full_path="$HOME/$path"
+        if [ -e "$full_path" ] || [ -L "$full_path" ]; then
+            echo "${RED}⚠ Removing conflict: $full_path${RESET}"
+            rm -rf "$full_path"
+        fi
     done
 
     stow "$dir"
 done
 
-echo "${GREEN}✅ Setup complete! You're good to go.${RESET}"
+echo "${GREEN}✅ Setup complete! Dotfiles linked, system ready to rizz.${RESET}"
 
