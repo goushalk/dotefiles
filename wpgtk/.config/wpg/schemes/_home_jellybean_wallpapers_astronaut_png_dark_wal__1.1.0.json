@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/astronaut.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a10",
+        "foreground": "#e7e5dd",
+        "cursor": "#e7e5dd"
+    },
+    "colors": {
+        "color0": "#0a0a10",
+        "color1": "#749794",
+        "color2": "#97A69C",
+        "color3": "#D2B499",
+        "color4": "#E6C6A1",
+        "color5": "#F5D8B2",
+        "color6": "#FAE3BD",
+        "color7": "#e7e5dd",
+        "color8": "#a1a09a",
+        "color9": "#749794",
+        "color10": "#97A69C",
+        "color11": "#D2B499",
+        "color12": "#E6C6A1",
+        "color13": "#F5D8B2",
+        "color14": "#FAE3BD",
+        "color15": "#e7e5dd"
+    }
+}

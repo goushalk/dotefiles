@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/bg7.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0E100E",
+        "foreground": "#e5e8eb",
+        "cursor": "#e5e8eb"
+    },
+    "colors": {
+        "color0": "#0E100E",
+        "color1": "#7D8287",
+        "color2": "#8C9195",
+        "color3": "#A3A8AE",
+        "color4": "#BABFC5",
+        "color5": "#CDD2D7",
+        "color6": "#D8DCE3",
+        "color7": "#e5e8eb",
+        "color8": "#a0a2a4",
+        "color9": "#7D8287",
+        "color10": "#8C9195",
+        "color11": "#A3A8AE",
+        "color12": "#BABFC5",
+        "color13": "#CDD2D7",
+        "color14": "#D8DCE3",
+        "color15": "#e5e8eb"
+    }
+}

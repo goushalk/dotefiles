@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/Enchanted-Moonlit-Tree.png",
+    "alpha": "100",
+    "special": {
+        "background": "#02192C",
+        "foreground": "#edd4ba",
+        "cursor": "#edd4ba"
+    },
+    "colors": {
+        "color0": "#02192C",
+        "color1": "#5F4B51",
+        "color2": "#9B4638",
+        "color3": "#A05A4E",
+        "color4": "#D46D4D",
+        "color5": "#EE9F64",
+        "color6": "#F4BC78",
+        "color7": "#edd4ba",
+        "color8": "#a59482",
+        "color9": "#5F4B51",
+        "color10": "#9B4638",
+        "color11": "#A05A4E",
+        "color12": "#D46D4D",
+        "color13": "#EE9F64",
+        "color14": "#F4BC78",
+        "color15": "#edd4ba"
+    }
+}

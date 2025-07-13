@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/Fantasy-Autumn.png",
+    "alpha": "100",
+    "special": {
+        "background": "#131219",
+        "foreground": "#ddccde",
+        "cursor": "#ddccde"
+    },
+    "colors": {
+        "color0": "#131219",
+        "color1": "#633E81",
+        "color2": "#68688D",
+        "color3": "#906DA1",
+        "color4": "#7987A7",
+        "color5": "#9196B2",
+        "color6": "#ADAFC8",
+        "color7": "#ddccde",
+        "color8": "#9a8e9b",
+        "color9": "#633E81",
+        "color10": "#68688D",
+        "color11": "#906DA1",
+        "color12": "#7987A7",
+        "color13": "#9196B2",
+        "color14": "#ADAFC8",
+        "color15": "#ddccde"
+    }
+}

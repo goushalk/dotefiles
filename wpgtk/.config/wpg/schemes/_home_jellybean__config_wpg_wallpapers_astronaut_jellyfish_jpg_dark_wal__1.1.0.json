@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jellybean/.config/wpg/wallpapers/astronaut_jellyfish.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0F161E",
+        "foreground": "#b7ffff",
+        "cursor": "#b7ffff"
+    },
+    "colors": {
+        "color0": "#0F161E",
+        "color1": "#94439B",
+        "color2": "#32514E",
+        "color3": "#B85154",
+        "color4": "#30A95B",
+        "color5": "#B6A743",
+        "color6": "#595A59",
+        "color7": "#8ae1c1",
+        "color8": "#1f2e3f",
+        "color9": "#cc48d7",
+        "color10": "#38716c",
+        "color11": "#ff585c",
+        "color12": "#30e972",
+        "color13": "#fce546",
+        "color14": "#688068",
+        "color15": "#b7ffff"
+    }
+}

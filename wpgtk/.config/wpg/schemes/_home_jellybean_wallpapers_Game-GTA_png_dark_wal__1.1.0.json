@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/Game-GTA.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0B172B",
+        "foreground": "#aab0c3",
+        "cursor": "#aab0c3"
+    },
+    "colors": {
+        "color0": "#0B172B",
+        "color1": "#A23B30",
+        "color2": "#E56537",
+        "color3": "#A35455",
+        "color4": "#DB694C",
+        "color5": "#F49E51",
+        "color6": "#F7A748",
+        "color7": "#aab0c3",
+        "color8": "#767b88",
+        "color9": "#A23B30",
+        "color10": "#E56537",
+        "color11": "#A35455",
+        "color12": "#DB694C",
+        "color13": "#F49E51",
+        "color14": "#F7A748",
+        "color15": "#aab0c3"
+    }
+}

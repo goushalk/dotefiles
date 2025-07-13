@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/jellybean/wallpapers/Linux-user-Room.png",
+    "alpha": "100",
+    "special": {
+        "background": "#09060c",
+        "foreground": "#bfbbc2",
+        "cursor": "#bfbbc2"
+    },
+    "colors": {
+        "color0": "#09060c",
+        "color1": "#273466",
+        "color2": "#444547",
+        "color3": "#5D5162",
+        "color4": "#9C562E",
+        "color5": "#9B675A",
+        "color6": "#475E9B",
+        "color7": "#bfbbc2",
+        "color8": "#858287",
+        "color9": "#273466",
+        "color10": "#444547",
+        "color11": "#5D5162",
+        "color12": "#9C562E",
+        "color13": "#9B675A",
+        "color14": "#475E9B",
+        "color15": "#bfbbc2"
+    }
+}

@@ -23,8 +23,8 @@ Pick a random index from the list
 Random_files=$((RANDOM % ${#abs_list[@]}))
 #
 # # Set the wallpaper using swww colors using pywal
-swww img "${abs_list[$Random_files]}" --transition-type grow --transition-duration 1 && wal -i "${abs_list[$Random_files]}"
-#
+swww img "${abs_list[$Random_files]}" --transition-type grow --transition-duration 1 && wpg -s "${abs_list[$Random_files]}"  && wal -i "${abs_list[$Random_files]}"
+~/.config/waybar/update.sh
 # # # Debug output
 #echo "List: ${abs_list[@]}"
 #echo "Number of files: $numfiles"
