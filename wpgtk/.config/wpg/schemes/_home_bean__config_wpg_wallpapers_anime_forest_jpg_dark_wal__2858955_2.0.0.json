@@ -1,0 +1,29 @@
+{
+    "checksum": "f64586d9e601db0ac402a12172a8b318",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/anime_forest.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#091006",
+        "foreground": "#e5a1db",
+        "cursor": "#e5a1db"
+    },
+    "colors": {
+        "color0": "#091006",
+        "color1": "#c87db7",
+        "color2": "#61C350",
+        "color3": "#90A428",
+        "color4": "#9DDB56",
+        "color5": "#A3C640",
+        "color6": "#E3EF63",
+        "color7": "#d975ca",
+        "color8": "#5c6956",
+        "color9": "#62A14F",
+        "color10": "#61C350",
+        "color11": "#90A428",
+        "color12": "#9DDB56",
+        "color13": "#A3C640",
+        "color14": "#E3EF63",
+        "color15": "#e5a1db"
+    }
+}

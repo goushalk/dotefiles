@@ -1,0 +1,29 @@
+{
+    "checksum": "99fa5eeb225f5ed37aee1f8495b5bb0f",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/wp12725494-retro-jdm-cars-wallpapers.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0a18",
+        "foreground": "#c1c1c5",
+        "cursor": "#c1c1c5"
+    },
+    "colors": {
+        "color0": "#0a0a18",
+        "color1": "#292C86",
+        "color2": "#44619B",
+        "color3": "#ED2290",
+        "color4": "#AC5493",
+        "color5": "#5D93BC",
+        "color6": "#B6A2B7",
+        "color7": "#c1c1c5",
+        "color8": "#59596d",
+        "color9": "#292C86",
+        "color10": "#44619B",
+        "color11": "#ED2290",
+        "color12": "#AC5493",
+        "color13": "#5D93BC",
+        "color14": "#B6A2B7",
+        "color15": "#c1c1c5"
+    }
+}

@@ -70,8 +70,8 @@ if [[ "$CHOICE" == *"Toggle Hotspot"* ]]; then
       && notify-send "$ICON_HOTSPOT Hotspot stopped" \
       || notify-send "$ICON_ERROR Failed to stop hotspot"
   else
-    HOTSPOT_SSID="HyprHotspot"
-    HOTSPOT_PASS="hyprland123"
+    HOTSPOT_SSID="arch_user"
+    HOTSPOT_PASS="goushal888"
     nmcli dev wifi hotspot ssid "$HOTSPOT_SSID" password "$HOTSPOT_PASS" \
       && notify-send "$ICON_HOTSPOT Hotspot started" \
       || notify-send "$ICON_ERROR Failed to start hotspot"

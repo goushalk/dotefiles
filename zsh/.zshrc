@@ -74,8 +74,7 @@ plugins=(
 
         git 
         sudo
-        autoswitch_virtualenv $plugins
-      
+              
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,8 +112,19 @@ source $ZSH/oh-my-zsh.sh
 #AUTORUN 
 #------------------------------------------------------
 
+export PATH=$PATH:/home/bean/.local/bin
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/foresttrail.omp.json)"
 
+
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"
+
+
+
+
+eval "$(pyenv virtualenv-init -)" 
 
 
 # -----------------------------------------------------
@@ -167,6 +177,7 @@ alias cursor='~/Downloads/Cursor-1.0.0-x86_64.AppImage'
 
 export LANG=en_IN.UTF-8
 export LC_ALL=en_IN.UTF-8
+
 #export QT_QPA_PLATFORMTHEME=qt5ct
 
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
@@ -180,10 +191,10 @@ export LC_ALL=en_IN.UTF-8
 # pywal
 # =====================================================================
 
-(cat ~/.cache/wal/sequences &)
-cat ~/.cache/wal/sequences
-source ~/.cache/wal/colors-tty.sh
-
+# (cat ~/.cache/wal/sequences &)
+# cat ~/.cache/wal/sequences
+# source ~/.cache/wal/colors-tty.sh
+# #
 
 alias ss="sudo pacman -Ss"
 alias s="yay -Ss"
@@ -225,4 +236,8 @@ gcap() {
     echo "${blue}[+] Pushing to main branch on GitHub...${reset}"
     git push -u origin main
 }
+#cat ~/.config/wpg/sequences &
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

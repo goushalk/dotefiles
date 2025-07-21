@@ -1,0 +1,29 @@
+{
+    "checksum": "1ab4439891232b7813b0c6a2d5c67eaf",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Enchanted-Moonlit-Tree.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#111e29",
+        "foreground": "#c3c6c9",
+        "cursor": "#c3c6c9"
+    },
+    "colors": {
+        "color0": "#111e29",
+        "color1": "#5F4B51",
+        "color2": "#9B4638",
+        "color3": "#A05A4E",
+        "color4": "#D46D4D",
+        "color5": "#EE9F64",
+        "color6": "#F4BC78",
+        "color7": "#c3c6c9",
+        "color8": "#606c76",
+        "color9": "#5F4B51",
+        "color10": "#9B4638",
+        "color11": "#A05A4E",
+        "color12": "#D46D4D",
+        "color13": "#EE9F64",
+        "color14": "#F4BC78",
+        "color15": "#c3c6c9"
+    }
+}

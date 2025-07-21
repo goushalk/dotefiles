@@ -1,0 +1,29 @@
+{
+    "checksum": "7c05e03698a8901e3c432325089f20da",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Linux-user-Room.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f0916",
+        "foreground": "#c3c1c4",
+        "cursor": "#c3c1c4"
+    },
+    "colors": {
+        "color0": "#0f0916",
+        "color1": "#273466",
+        "color2": "#444547",
+        "color3": "#5D5162",
+        "color4": "#9C562E",
+        "color5": "#9B675A",
+        "color6": "#475E9B",
+        "color7": "#c3c1c4",
+        "color8": "#62596c",
+        "color9": "#273466",
+        "color10": "#444547",
+        "color11": "#5D5162",
+        "color12": "#9C562E",
+        "color13": "#9B675A",
+        "color14": "#475E9B",
+        "color15": "#c3c1c4"
+    }
+}

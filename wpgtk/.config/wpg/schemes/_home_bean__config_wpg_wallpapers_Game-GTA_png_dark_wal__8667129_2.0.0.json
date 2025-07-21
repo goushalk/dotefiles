@@ -1,0 +1,29 @@
+{
+    "checksum": "1d4be648ccd281b0e1bdcb6d8808e808",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Game-GTA.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#141d2e",
+        "foreground": "#c4c6ca",
+        "cursor": "#c4c6ca"
+    },
+    "colors": {
+        "color0": "#141d2e",
+        "color1": "#A23B30",
+        "color2": "#E56537",
+        "color3": "#A35455",
+        "color4": "#DB694C",
+        "color5": "#F49E51",
+        "color6": "#F7A748",
+        "color7": "#c4c6ca",
+        "color8": "#636b79",
+        "color9": "#A23B30",
+        "color10": "#E56537",
+        "color11": "#A35455",
+        "color12": "#DB694C",
+        "color13": "#F49E51",
+        "color14": "#F7A748",
+        "color15": "#c4c6ca"
+    }
+}

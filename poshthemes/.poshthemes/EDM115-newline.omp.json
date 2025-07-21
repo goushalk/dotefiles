@@ -168,7 +168,7 @@
             "always_enabled": true,
             "cache_duration": "none"
           },
-          "template": "╰─ ❯❯",
+          "template": "╰─ ~>",
           "foreground": "p:color15",
           "type": "text",
           "style": "diamond"

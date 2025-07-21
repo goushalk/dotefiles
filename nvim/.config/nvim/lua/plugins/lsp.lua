@@ -13,7 +13,10 @@ return {
     dependencies = { "williamboman/mason.nvim" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "rust_analyzer"}, -- add more here if needed
+        ensure_installed = { "lua_ls", 
+                             "rust_analyzer",
+                             "pyright" 
+        }, -- add more here if needed
         automatic_installation = true,
       })
     end,
@@ -23,11 +26,11 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-      
+      local lspconfig = require("lspconfig")      
       lspconfig.lua_ls.setup({})
       lspconfig.ts_ls.setup({})
       lspconfig.rust_analyzer.setup({})
+      lspconfig.pyright.setup({})
     end,
   },
 }

@@ -19,5 +19,7 @@ require("lazy").setup(
 
 require("core.options")
 require("core.keymaps")
+require("core.highlights")
+
 -- pcall(vim.cmd,"colorscheme foresttrail")
 

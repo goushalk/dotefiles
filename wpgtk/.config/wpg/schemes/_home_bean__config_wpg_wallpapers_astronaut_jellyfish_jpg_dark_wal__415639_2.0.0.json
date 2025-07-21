@@ -1,0 +1,29 @@
+{
+    "checksum": "f581264e96718ad90bf2cea9aea55856",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/astronaut_jellyfish.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#111b28",
+        "foreground": "#c3c6c9",
+        "cursor": "#c3c6c9"
+    },
+    "colors": {
+        "color0": "#111b28",
+        "color1": "#32514E",
+        "color2": "#595A59",
+        "color3": "#B85154",
+        "color4": "#30A95B",
+        "color5": "#B6A743",
+        "color6": "#94439B",
+        "color7": "#c3c6c9",
+        "color8": "#606976",
+        "color9": "#32514E",
+        "color10": "#595A59",
+        "color11": "#B85154",
+        "color12": "#30A95B",
+        "color13": "#B6A743",
+        "color14": "#94439B",
+        "color15": "#c3c6c9"
+    }
+}

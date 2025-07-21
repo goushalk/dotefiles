@@ -1,16 +1,22 @@
 [general]
 framerate = 60
-bars = 160
+bars = 30
 autosens = 1
 sensitivity = 100
 lower_cutoff_freq = 50
 higher_cutoff_freq = 10000
 
 [output]
-method = ncurses
-channels = stereo
+method = raw
 raw_target = /dev/stdout
 data_format = ascii
+ascii_max_range = 7
+noise_reduction = 0.77
+
+
+[input]
+method = pulse
+
 
 [smoothing]
 integral = 150
@@ -19,14 +25,13 @@ noise_reduction = 80
 
 [color]
 gradient = 1
-gradient_color_1 = '{color0}'
-gradient_color_2 = '{color1}'
-gradient_color_3 = '{color2}'
-gradient_color_4 = '{color3}'
-gradient_color_5 = '{color4}'
-gradient_color_6 = '{color5}'
-gradient_color_7 = '{color6}'
-gradient_color_8 = '{color7}'
-gradient_color_9 = '{color8}'
-gradient_color_10 = '{color9}'
-
+gradient_color_1 = '#111b28'
+gradient_color_2 = '#32514E'
+gradient_color_3 = '#595A59'
+gradient_color_4 = '#B85154'
+gradient_color_5 = '#30A95B'
+gradient_color_6 = '#B6A743'
+gradient_color_7 = '#94439B'
+gradient_color_8 = '#c3c6c9'
+gradient_color_9 = '#606976'
+gradient_color_10 = '#32514E'

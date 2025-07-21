@@ -36,7 +36,8 @@ return {
       vim.keymap.set("n", "<C-p>", function()
         require("telescope.builtin").find_files({ hidden = true })
       end, { desc = "Find Files (incl. hidden)" })
-
+      
+      vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' }) 
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
       vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Find Buffers" })
       vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })

@@ -1,0 +1,28 @@
+{
+    "checksum": "da2a8315203a461379e238973f9061da",
+    "wallpaper": "/home/bean/wallpapers/car_rain.png",
+    "alpha": "100",
+    "special": {
+        "background": "#111216",
+        "foreground": "#c3c3c4",
+        "cursor": "#c3c3c4"
+    },
+    "colors": {
+        "color0": "#111216",
+        "color1": "#484C51",
+        "color2": "#64585E",
+        "color3": "#9E3945",
+        "color4": "#9A5558",
+        "color5": "#DA6169",
+        "color6": "#707F8D",
+        "color7": "#c3c3c4",
+        "color8": "#5b5b6f",
+        "color9": "#484C51",
+        "color10": "#64585E",
+        "color11": "#9E3945",
+        "color12": "#9A5558",
+        "color13": "#DA6169",
+        "color14": "#707F8D",
+        "color15": "#c3c3c4"
+    }
+}

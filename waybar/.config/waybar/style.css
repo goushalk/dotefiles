@@ -1,4 +1,4 @@
-@import url("file:///home/jellybean/.cache/wal/colors-waybar.css");
+@import url("file:///home/bean/.cache/wal/colors-waybar.css");
 
 * {
   font-family: JetBrainsMono Nerd Font, sans-serif;
@@ -35,32 +35,16 @@ window#waybar {
   border-radius: 100px;
 }
 
-#custom-network_speed {
+
+#custom-cava {
+  font-size: 12px;
+  padding: 2px 6px;
+  min-width: 1px;
   background: @background;
-  border: 2px solid @color14;
   border-radius: 16px;
-  margin: 2px;
-  padding: 1px 4px;
-  transition: padding 0.3s ease;
-  color: @color14;
+  border: 2px solid @color14;
+  color: @color3;
 }
-
-#custom-network_speed span:nth-child(2) {
-  font-size: 0px;
-  transition: font-size 0.3s ease;
-}
-
-/* On hover: expand padding + show the text */
-#custom-network_speed:hover {
-  padding: 1px 10px;
-}
-
-#custom-network_speed:hover span:nth-child(2) {
-  font-size: 14px;
-}
-
-
-
 
 #custom-hotkey,
 #custom-theme,

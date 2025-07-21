@@ -1,0 +1,29 @@
+{
+    "checksum": "2212cdabc3ba082d9618b47d675d569a",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/gabriel-gurrola-u6BPMXgURuI-unsplash.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b1319",
+        "foreground": "#c2c4c5",
+        "cursor": "#c2c4c5"
+    },
+    "colors": {
+        "color0": "#0b1319",
+        "color1": "#2A3B44",
+        "color2": "#2E505E",
+        "color3": "#56565E",
+        "color4": "#B74A38",
+        "color5": "#D4A75B",
+        "color6": "#4C768A",
+        "color7": "#c2c4c5",
+        "color8": "#5a656e",
+        "color9": "#2A3B44",
+        "color10": "#2E505E",
+        "color11": "#56565E",
+        "color12": "#B74A38",
+        "color13": "#D4A75B",
+        "color14": "#4C768A",
+        "color15": "#c2c4c5"
+    }
+}

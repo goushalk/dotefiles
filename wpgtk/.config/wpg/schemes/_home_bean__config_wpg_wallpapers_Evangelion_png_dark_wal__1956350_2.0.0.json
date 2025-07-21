@@ -1,0 +1,29 @@
+{
+    "checksum": "f2fc35338e3bb8655212e0b1920e28a4",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Evangelion.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#222222",
+        "foreground": "#c6c2c2",
+        "cursor": "#c6c2c2"
+    },
+    "colors": {
+        "color0": "#222222",
+        "color1": "#9e3232",
+        "color2": "#A23D3D",
+        "color3": "#994848",
+        "color4": "#7B7F80",
+        "color5": "#7C8080",
+        "color6": "#8D8D8D",
+        "color7": "#c6c2c2",
+        "color8": "#0d0a0a",
+        "color9": "#933737",
+        "color10": "#A23D3D",
+        "color11": "#994848",
+        "color12": "#7B7F80",
+        "color13": "#7C8080",
+        "color14": "#8D8D8D",
+        "color15": "#c6c2c2"
+    }
+}

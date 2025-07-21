@@ -1,0 +1,29 @@
+{
+    "checksum": "cdcb5276e388ee557cdfc8a3c9a72e87",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/bg7.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0d1e0d",
+        "foreground": "#c2c6c2",
+        "cursor": "#c2c6c2"
+    },
+    "colors": {
+        "color0": "#0d1e0d",
+        "color1": "#7D8287",
+        "color2": "#8C9195",
+        "color3": "#A3A8AE",
+        "color4": "#BABFC5",
+        "color5": "#CDD2D7",
+        "color6": "#D8DCE3",
+        "color7": "#c2c6c2",
+        "color8": "#5c705c",
+        "color9": "#7D8287",
+        "color10": "#8C9195",
+        "color11": "#A3A8AE",
+        "color12": "#BABFC5",
+        "color13": "#CDD2D7",
+        "color14": "#D8DCE3",
+        "color15": "#c2c6c2"
+    }
+}

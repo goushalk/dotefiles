@@ -1,0 +1,29 @@
+{
+    "checksum": "09d0bfe38392c35f91b9791c82910852",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/forest_stairs.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#12151a",
+        "foreground": "#c3c4c5",
+        "cursor": "#c3c4c5"
+    },
+    "colors": {
+        "color0": "#12151a",
+        "color1": "#393A43",
+        "color2": "#2A375F",
+        "color3": "#3F4145",
+        "color4": "#4A4C4A",
+        "color5": "#62694D",
+        "color6": "#8A7B5A",
+        "color7": "#c3c4c5",
+        "color8": "#5c6371",
+        "color9": "#393A43",
+        "color10": "#2A375F",
+        "color11": "#3F4145",
+        "color12": "#4A4C4A",
+        "color13": "#62694D",
+        "color14": "#8A7B5A",
+        "color15": "#c3c4c5"
+    }
+}

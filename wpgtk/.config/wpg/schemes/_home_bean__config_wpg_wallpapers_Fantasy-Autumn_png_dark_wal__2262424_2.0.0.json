@@ -1,0 +1,29 @@
+{
+    "checksum": "14c1df12b5e6e10184133548fa81e8b8",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Fantasy-Autumn.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131219",
+        "foreground": "#c4c3c5",
+        "cursor": "#c4c3c5"
+    },
+    "colors": {
+        "color0": "#131219",
+        "color1": "#633E81",
+        "color2": "#68688D",
+        "color3": "#906DA1",
+        "color4": "#7987A7",
+        "color5": "#9196B2",
+        "color6": "#ADAFC8",
+        "color7": "#c4c3c5",
+        "color8": "#605c70",
+        "color9": "#633E81",
+        "color10": "#68688D",
+        "color11": "#906DA1",
+        "color12": "#7987A7",
+        "color13": "#9196B2",
+        "color14": "#ADAFC8",
+        "color15": "#c4c3c5"
+    }
+}
