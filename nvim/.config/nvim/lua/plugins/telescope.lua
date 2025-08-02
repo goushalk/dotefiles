@@ -17,7 +17,7 @@ return {
             preview_width = 0.5,
           },
           sorting_strategy = "ascending",
-          prompt_prefix = "🔍 ",
+          prompt_prefix = " 󰭎 ",
         },
         extensions = {
           ["ui-select"] = require("telescope.themes").get_dropdown({

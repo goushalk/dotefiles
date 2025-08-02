@@ -1,0 +1,29 @@
+{
+    "checksum": "7dad910b538e922eb029b1f528dc8c52",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Dragon_samurai.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0e0c1d",
+        "foreground": "#c2c2c6",
+        "cursor": "#c2c2c6"
+    },
+    "colors": {
+        "color0": "#0e0c1d",
+        "color1": "#4F4E70",
+        "color2": "#8C5E7C",
+        "color3": "#645E88",
+        "color4": "#6F6B8F",
+        "color5": "#5945A7",
+        "color6": "#8F749E",
+        "color7": "#c2c2c6",
+        "color8": "#5e5c70",
+        "color9": "#4F4E70",
+        "color10": "#8C5E7C",
+        "color11": "#645E88",
+        "color12": "#6F6B8F",
+        "color13": "#5945A7",
+        "color14": "#8F749E",
+        "color15": "#c2c2c6"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "checksum": "d1da9286f15c7da8504817bcf0937931",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/Arch_cool.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090404",
+        "foreground": "#c1c0c0",
+        "cursor": "#c1c0c0"
+    },
+    "colors": {
+        "color0": "#090404",
+        "color1": "#2E7AD4",
+        "color2": "#358AE2",
+        "color3": "#358AFC",
+        "color4": "#41A9FF",
+        "color5": "#A1A1A2",
+        "color6": "#BFC0C0",
+        "color7": "#c1c0c0",
+        "color8": "#665353",
+        "color9": "#2E7AD4",
+        "color10": "#358AE2",
+        "color11": "#358AFC",
+        "color12": "#41A9FF",
+        "color13": "#A1A1A2",
+        "color14": "#BFC0C0",
+        "color15": "#c1c0c0"
+    }
+}

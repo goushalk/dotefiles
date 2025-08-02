@@ -4,7 +4,7 @@ vim.keymap.set('n', '<leader>q', ':wqa<CR>', {})
 vim.keymap.set({ 'n' }, '<leader>s', ':wa<CR>', { silent = true })
 vim.keymap.set({ 'n' }, '<leader>d', ':Dashboard<CR>', { silent = true })
 vim.keymap.set("i", "<M-BS>", "<C-W>", { noremap = true })
-
+vim.keymap.set('n', '<leader>e', ':Explore', {silent = true})
 
 
 
@@ -56,6 +56,8 @@ vim.keymap.set('n', '<leader>r', function()
         cmd = "g++ " .. file .. " -o " .. filename_no_ext .. " && ./" .. filename_no_ext
     elseif ext == 'rs' then
         cmd = "rustc " .. file .. " && ./" .. filename_no_ext
+    elseif ext == 'go' then
+        cmd = "go run " .. file
     else
         print("No run command defined for *." .. ext .. " files")
         return

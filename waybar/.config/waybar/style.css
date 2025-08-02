@@ -30,7 +30,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  background: rgba(36, 66, 52, 0.6);
+  background: @color1;
   color: @color14;
   border-radius: 100px;
 }
@@ -45,6 +45,22 @@ window#waybar {
   border: 2px solid @color14;
   color: @color3;
 }
+
+
+
+#custom-spotify {
+  font-size: 14px;
+  padding: 2px 10px;
+  margin: 2px;
+  background: @background;
+  border-radius: 16px;
+  border: 2px solid @color14;
+  color: @color14;
+}
+
+
+
+
 
 #custom-hotkey,
 #custom-theme,

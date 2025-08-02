@@ -1,0 +1,29 @@
+{
+    "checksum": "ddc981cb5dfde0392ac6dd9df39b0c61",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/metro.gif",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0b171a",
+        "foreground": "#c2c5c5",
+        "cursor": "#c2c5c5"
+    },
+    "colors": {
+        "color0": "#0b171a",
+        "color1": "#BA6D81",
+        "color2": "#D2788B",
+        "color3": "#E9939B",
+        "color4": "#FBB39E",
+        "color5": "#D39BBA",
+        "color6": "#F2ABA7",
+        "color7": "#c2c5c5",
+        "color8": "#5a6b6f",
+        "color9": "#BA6D81",
+        "color10": "#D2788B",
+        "color11": "#E9939B",
+        "color12": "#FBB39E",
+        "color13": "#D39BBA",
+        "color14": "#F2ABA7",
+        "color15": "#c2c5c5"
+    }
+}

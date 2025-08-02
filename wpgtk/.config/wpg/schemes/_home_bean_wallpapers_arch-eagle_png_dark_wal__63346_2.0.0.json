@@ -1,0 +1,28 @@
+{
+    "checksum": "8d1d8a31152647f5a05cff4f9c8d7c8d",
+    "wallpaper": "/home/bean/wallpapers/arch-eagle.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d191f",
+        "foreground": "#c2c5c7",
+        "cursor": "#c2c5c7"
+    },
+    "colors": {
+        "color0": "#0d191f",
+        "color1": "#173747",
+        "color2": "#333D43",
+        "color3": "#184155",
+        "color4": "#394247",
+        "color5": "#4E5052",
+        "color6": "#5D5F61",
+        "color7": "#c2c5c7",
+        "color8": "#5c6a71",
+        "color9": "#173747",
+        "color10": "#333D43",
+        "color11": "#184155",
+        "color12": "#394247",
+        "color13": "#4E5052",
+        "color14": "#5D5F61",
+        "color15": "#c2c5c7"
+    }
+}

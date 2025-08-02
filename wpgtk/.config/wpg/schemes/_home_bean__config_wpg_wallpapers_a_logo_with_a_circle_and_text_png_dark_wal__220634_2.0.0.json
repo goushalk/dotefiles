@@ -1,0 +1,29 @@
+{
+    "checksum": "0f0733c7eb023d04f734cc4051c929fe",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/a_logo_with_a_circle_and_text.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090404",
+        "foreground": "#c1c0c0",
+        "cursor": "#c1c0c0"
+    },
+    "colors": {
+        "color0": "#090404",
+        "color1": "#327ACD",
+        "color2": "#807F80",
+        "color3": "#3582DB",
+        "color4": "#388BF3",
+        "color5": "#A1A1A1",
+        "color6": "#C0BFC0",
+        "color7": "#c1c0c0",
+        "color8": "#665353",
+        "color9": "#327ACD",
+        "color10": "#807F80",
+        "color11": "#3582DB",
+        "color12": "#388BF3",
+        "color13": "#A1A1A1",
+        "color14": "#b5b5e9",
+        "color15": "#c1c0c0"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "checksum": "7d95b0cf012865268505859ab9c80443",
+    "wallpaper": "/home/bean/wallpapers/orange-cube.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#111829",
+        "foreground": "#c3c5c9",
+        "cursor": "#c3c5c9"
+    },
+    "colors": {
+        "color0": "#111829",
+        "color1": "#624D4B",
+        "color2": "#A93D4D",
+        "color3": "#EB3247",
+        "color4": "#F35744",
+        "color5": "#F6A73B",
+        "color6": "#F9D42F",
+        "color7": "#c3c5c9",
+        "color8": "#606676",
+        "color9": "#624D4B",
+        "color10": "#A93D4D",
+        "color11": "#EB3247",
+        "color12": "#F35744",
+        "color13": "#F6A73B",
+        "color14": "#F9D42F",
+        "color15": "#c3c5c9"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "checksum": "febbbe43a2cbadab2478da48fcbbce3b",
+    "wallpaper": "/home/bean/.config/wpg/wallpapers/a_building_and_trees_at_night.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#14212e",
+        "foreground": "#c4c7ca",
+        "cursor": "#c4c7ca"
+    },
+    "colors": {
+        "color0": "#14212e",
+        "color1": "#1C4461",
+        "color2": "#094671",
+        "color3": "#2B4D6C",
+        "color4": "#4C5A76",
+        "color5": "#055388",
+        "color6": "#22648F",
+        "color7": "#c4c7ca",
+        "color8": "#636d79",
+        "color9": "#1C4461",
+        "color10": "#094671",
+        "color11": "#2B4D6C",
+        "color12": "#4C5A76",
+        "color13": "#055388",
+        "color14": "#22648F",
+        "color15": "#c4c7ca"
+    }
+}

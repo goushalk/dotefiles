@@ -3,7 +3,6 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -111,6 +110,13 @@ source $ZSH/oh-my-zsh.sh
 #------------------------------------------------------
 #AUTORUN 
 #------------------------------------------------------
+
+export GOPATH="$HOME/go"
+export GOBIN="$HOME/go/bin"
+export PATH="$PATH:$GOBIN"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+. "$HOME/.cargo/env" 
+eval "$(tmuxifier init -)"
 
 export PATH=$PATH:/home/bean/.local/bin
 eval "$(oh-my-posh init zsh --config ~/.poshthemes/foresttrail.omp.json)"
@@ -241,3 +247,16 @@ gcap() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/bean/.dart-cli-completion/zsh-config.zsh ]] && . /home/bean/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+
+
+
+
+export EDITOR=nvim  
+alias cursor="~/software/Cursor-1.2.2-x86_64.AppImage"
+

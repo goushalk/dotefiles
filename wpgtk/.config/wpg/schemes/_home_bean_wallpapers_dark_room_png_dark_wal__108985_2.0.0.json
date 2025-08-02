@@ -1,0 +1,28 @@
+{
+    "checksum": "8f02236d67c6c2671bf514bda550dfa6",
+    "wallpaper": "/home/bean/wallpapers/dark_room.png",
+    "alpha": "100",
+    "special": {
+        "background": "#100707",
+        "foreground": "#c3c1c1",
+        "cursor": "#c3c1c1"
+    },
+    "colors": {
+        "color0": "#100707",
+        "color1": "#575757",
+        "color2": "#6E6E6E",
+        "color3": "#8F8F8F",
+        "color4": "#B0B0B0",
+        "color5": "#CFCFCF",
+        "color6": "#E8E8E8",
+        "color7": "#c3c1c1",
+        "color8": "#695656",
+        "color9": "#575757",
+        "color10": "#6E6E6E",
+        "color11": "#8F8F8F",
+        "color12": "#B0B0B0",
+        "color13": "#CFCFCF",
+        "color14": "#E8E8E8",
+        "color15": "#c3c1c1"
+    }
+}

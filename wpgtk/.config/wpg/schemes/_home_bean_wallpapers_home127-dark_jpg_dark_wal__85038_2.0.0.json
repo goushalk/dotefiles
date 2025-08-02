@@ -1,0 +1,28 @@
+{
+    "checksum": "f0bbe8c59f880c644245adab2a2daed5",
+    "wallpaper": "/home/bean/wallpapers/home127-dark.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d1e",
+        "foreground": "#c2c2c6",
+        "cursor": "#c2c2c6"
+    },
+    "colors": {
+        "color0": "#0d0d1e",
+        "color1": "#7D8167",
+        "color2": "#8E9373",
+        "color3": "#AEB589",
+        "color4": "#BBC292",
+        "color5": "#C5CC99",
+        "color6": "#D9E1A6",
+        "color7": "#c2c2c6",
+        "color8": "#5c5c70",
+        "color9": "#7D8167",
+        "color10": "#8E9373",
+        "color11": "#AEB589",
+        "color12": "#BBC292",
+        "color13": "#C5CC99",
+        "color14": "#D9E1A6",
+        "color15": "#c2c2c6"
+    }
+}
