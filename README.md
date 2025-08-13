@@ -5,6 +5,9 @@ Personal configuration files for my daily Linux desktop – tuned for a Wayland 
 > "Keep your tools close and your configs closer."
 
 ---
+## Wallpapers
+
+[wallpapers](wallpapers/wallz.md)
 
 ## ✨ Features
 
